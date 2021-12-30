@@ -70,11 +70,11 @@ const Header = ({ data }) => {
               steps={[
                 "Hello world! 👋",
                 3000,
-                `I am ${name}`,
+                `I am Sanel Zulic`,
                 3000,
-                "I can code 👌.",
+                "I can code 👌",
                 3000,
-                "I can work for you 🤔.",
+                "I can work for you 🤔",
                 3000,
               ]}
               loop={Infinity}
