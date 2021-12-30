@@ -23,7 +23,7 @@ const Footer = ({ data }) => {
             <li>
               Made by{" "}
               <a title="zullum" href="https://sanelzulic.netlify.app/">
-                PAPA
+                ZULLUM
               </a>
             </li>
           </ul>
