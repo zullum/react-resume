@@ -3,7 +3,7 @@ import Typical from "react-typical";
 
 const Header = ({ data }) => {
   if (data) {
-    var name = data.name || "";
+    // var name = data.name || "";
     var occupation = data.occupation;
     var description = data.description;
     var city = data.address.city;
