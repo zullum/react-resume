@@ -1,12 +1,13 @@
 import React from "react";
-import TypeWriter from "react-typewriter";
+import Typical from "react-typical";
 
 const Header = ({ data }) => {
   if (data) {
-    var name = data.name;
+    var name = data.name || "";
     var occupation = data.occupation;
     var description = data.description;
     var city = data.address.city;
+
     var networks = data.social.map(function (network) {
       return (
         <li key={network.name}>
@@ -65,7 +66,20 @@ const Header = ({ data }) => {
       <div className="row banner">
         <div className="banner-text">
           <h1 className="responsive-headline">
-            <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
+            <Typical
+              steps={[
+                "Hello world! 👋",
+                3000,
+                `I am ${name}`,
+                3000,
+                "I can code 👌.",
+                3000,
+                "I can work for you 🤔.",
+                3000,
+              ]}
+              loop={Infinity}
+              wrapper="p"
+            />
           </h1>
           <h3>
             Based in {city}. <span>{occupation}</span>. {description}.
