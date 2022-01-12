@@ -14,7 +14,7 @@
       "state": "Bosnia and Herzegovina",
       "zip": "75265"
     },
-    "website": "https://sanelzulic.netlify.app/",
+    "website": "https://sanelzulic.com/",
     "resumedownload": "./Sanel_Zulic_Resume.pdf",
     "social": [{
         "name": "youtube",
@@ -54,11 +54,11 @@
     }],
     "skills": [{
         "name": "ReactJs",
-        "level": "100%"
+        "level": "99%"
       },
       {
         "name": "JavaScript",
-        "level": "99%"
+        "level": "90%"
       },
       {
         "name": "PHP",
@@ -87,10 +87,6 @@
       {
         "name": "Git",
         "level": "80%"
-      },
-      {
-        "name": "Web Development",
-        "level": "95%"
       },
       {
         "name": "Drupal",

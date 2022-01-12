@@ -1,4 +1,5 @@
 import React from "react";
+import Progress from "./Progress";
 
 const Resume = ({ data }) => {
   if (data) {
@@ -28,12 +29,11 @@ const Resume = ({ data }) => {
       );
     });
     var skills = data.skills.map(function (skills) {
-      var className = "bar-expand " + skills.name.toLowerCase();
+
       return (
-        <li key={skills.name}>
-          <span style={{ width: skills.level }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
+        <div key={skills.name}>
+          <Progress percent={skills.level} skillname={skills.name} />
+        </div>
       );
     });
   }
@@ -74,8 +74,8 @@ const Resume = ({ data }) => {
         <div className="nine columns main-col">
           <p>{skillmessage}</p>
 
-          <div className="bars">
-            <ul className="skills">{skills}</ul>
+          <div className="bars container">
+            {skills}
           </div>
         </div>
       </div>

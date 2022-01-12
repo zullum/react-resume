@@ -1,6 +1,8 @@
 import React from "react";
 import Typical from "react-typical";
 
+import "./particles.scss";
+
 const Header = ({ data }) => {
   if (data) {
     // var name = data.name || "";
@@ -18,6 +20,10 @@ const Header = ({ data }) => {
       );
     });
   }
+
+  const particles = Array(100)
+    .fill()
+    .map((_, i) => i + 1);
 
   return (
     <header id="home">
@@ -94,6 +100,12 @@ const Header = ({ data }) => {
           <i className="icon-down-circle"></i>
         </a>
       </p>
+
+      {particles.map((_, i) => (
+        <div key={i} className="circle-container">
+          <div className="circle"></div>
+        </div>
+      ))}
     </header>
   );
 };
